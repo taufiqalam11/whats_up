@@ -25,7 +25,9 @@ class _HomeScreenState extends State<HomeScreen>
         backgroundColor: Theme.of(context).colorScheme.secondary,
         title: Text(
           "WhatsUp",
-          style: TextStyle(fontWeight: FontWeight.bold),
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
         ),
         actions: [
           IconButton(
@@ -65,9 +67,13 @@ class _HomeScreenState extends State<HomeScreen>
         ],
         bottom: TabBar(controller: _controller, tabs: [
           Tab(
-            icon: Icon(Icons.camera_alt),
+            icon: Icon(
+              Icons.camera_alt,
+            ),
           ),
-          Tab(text: "CHATS"),
+          Tab(
+            text: "CHATS",
+          ),
           Tab(text: "STATUS"),
           Tab(text: "CALLS"),
         ]),
